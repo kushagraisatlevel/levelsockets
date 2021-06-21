@@ -2,11 +2,8 @@ var express = require('express');
 var socket = require('socket.io');
 //App 
 var app = express();
-var port = process.env.PORT || 8000;
-
-var server = app.listen(port, "0.0.0.0", function () {
-    console.log("Listening on Port 8000");
-});
+var server = app.listen(3000);
+console.log("Listening to post 3000");
 
 //Static files
 app.use(express.static('public'));
