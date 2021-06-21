@@ -2,7 +2,7 @@ var express = require('express');
 var socket = require('socket.io');
 //App 
 var app = express();
-var server = app.listen(3000 || process.env.port);
+var server = app.listen(8000 || process.env.PORT);
 console.log("Listening to post 3000");
 
 //Static files
